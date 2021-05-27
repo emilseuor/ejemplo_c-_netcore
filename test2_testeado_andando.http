@@ -1,0 +1,166 @@
+GET https://localhost:44384/api/movie/list
+
+###
+
+GET https://localhost:44384/api/movie/Search/aaa
+
+###
+GET https://localhost:44384/api/movie/Detail/7
+
+###
+POST https://localhost:44384/login
+Content-Type: application/json
+
+{
+    "Email": "admin@admin.com",
+    "Password": "password123"
+}
+###
+POST https://localhost:44384/logout
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiOTIxODcyZWQtNjgwYi00ZDAzLWJmNjQtYmYyM2ZlNmVhMjRlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTU3NTM5NDIsImlzcyI6Ik15c2VsZiIsImF1ZCI6Ik15c2VsZiJ9.YmjToiOjtVejrNC5AyywmdlhFHKIJ5sn03Bs2onDOUo
+
+###
+GET https://localhost:44384/api/movie/admin/list/0
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiOTIxODcyZWQtNjgwYi00ZDAzLWJmNjQtYmYyM2ZlNmVhMjRlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTU3MDg5MzEsImlzcyI6Ik15c2VsZiIsImF1ZCI6Ik15c2VsZiJ9.4Orve0wm3EXkK_q12KFH7EGj5bP4HrsW9UHdf8rJ2lw
+
+###
+GET https://localhost:44384/api/movie/Admin/Search/aaa
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiOTIxODcyZWQtNjgwYi00ZDAzLWJmNjQtYmYyM2ZlNmVhMjRlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTU3MDg5MzEsImlzcyI6Ik15c2VsZiIsImF1ZCI6Ik15c2VsZiJ9.4Orve0wm3EXkK_q12KFH7EGj5bP4HrsW9UHdf8rJ2lw
+
+###
+GET https://localhost:44384/api/movie/like/7
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiOTIxODcyZWQtNjgwYi00ZDAzLWJmNjQtYmYyM2ZlNmVhMjRlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTU3MDg5MzEsImlzcyI6Ik15c2VsZiIsImF1ZCI6Ik15c2VsZiJ9.4Orve0wm3EXkK_q12KFH7EGj5bP4HrsW9UHdf8rJ2lw
+
+###
+POST https://localhost:44384/api/movie/Add HTTP/2.0
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiOTIxODcyZWQtNjgwYi00ZDAzLWJmNjQtYmYyM2ZlNmVhMjRlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTU3MDg5MzEsImlzcyI6Ik15c2VsZiIsImF1ZCI6Ik15c2VsZiJ9.4Orve0wm3EXkK_q12KFH7EGj5bP4HrsW9UHdf8rJ2lw
+
+{
+    "id": 0,
+    "title": "last test",
+    "description": "last test",
+    "rentalprice": 3.00,
+    "saleprice": 200.50,
+    "img": null,
+    "stock": 1,
+    "availability": true
+}
+
+###
+POST https://localhost:44384/api/movie/Edit HTTP/2.0
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiOTIxODcyZWQtNjgwYi00ZDAzLWJmNjQtYmYyM2ZlNmVhMjRlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTU3MDg5MzEsImlzcyI6Ik15c2VsZiIsImF1ZCI6Ik15c2VsZiJ9.4Orve0wm3EXkK_q12KFH7EGj5bP4HrsW9UHdf8rJ2lw
+
+{
+    "id": 9,
+    "title": "last test 1",
+    "description": "last test",
+    "rentalprice": 3.00,
+    "saleprice": 200.50,
+    "img": null,
+    "stock": 1,
+    "availability": true
+}
+
+###
+PUT https://localhost:44384/api/movie/Delete/5 HTTP/2.0
+Content-Type: "DELETE"
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiOTIxODcyZWQtNjgwYi00ZDAzLWJmNjQtYmYyM2ZlNmVhMjRlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTU3MDg5MzEsImlzcyI6Ik15c2VsZiIsImF1ZCI6Ik15c2VsZiJ9.4Orve0wm3EXkK_q12KFH7EGj5bP4HrsW9UHdf8rJ2lw
+
+###
+
+POST https://localhost:44384/Operation/List
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiOTIxODcyZWQtNjgwYi00ZDAzLWJmNjQtYmYyM2ZlNmVhMjRlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTU3NTAwNzQsImlzcyI6Ik15c2VsZiIsImF1ZCI6Ik15c2VsZiJ9.inQTzbshLnOxfBCZaTQgrb5M4H3kKrsN_8GXptVhqjY
+
+{
+}
+
+###
+POST https://localhost:44384/Operation/Add
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiOTIxODcyZWQtNjgwYi00ZDAzLWJmNjQtYmYyM2ZlNmVhMjRlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTU3NTA0MzYsImlzcyI6Ik15c2VsZiIsImF1ZCI6Ik15c2VsZiJ9.ADASUwQVtXmDYGI9x7qeSNCBcqowP_BhVGWNLU_Qwlw
+
+{
+    "MovieId": 8,
+    "Type": "RENT",
+    "DaysBeforeDueDate": 3,
+    "UserId": "921872ed-680b-4d03-bf64-bf23fe6ea24e",
+    "Price": 0.00,
+    "Status": "PAID"
+}
+
+###
+POST https://localhost:44384/Operation/Edit
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiOTIxODcyZWQtNjgwYi00ZDAzLWJmNjQtYmYyM2ZlNmVhMjRlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTU3NTA0MzYsImlzcyI6Ik15c2VsZiIsImF1ZCI6Ik15c2VsZiJ9.ADASUwQVtXmDYGI9x7qeSNCBcqowP_BhVGWNLU_Qwlw
+
+{
+    "Id": 3,
+    "MovieId": 7,
+    "Type": "RENT",
+    "UserId": "921872ed-680b-4d03-bf64-bf23fe6ea24e",
+    "Status": "RETURNED"
+}
+
+###
+POST https://localhost:44384/Operation/Admin/UnreturnedList
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiOTIxODcyZWQtNjgwYi00ZDAzLWJmNjQtYmYyM2ZlNmVhMjRlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTU3MDg5MzEsImlzcyI6Ik15c2VsZiIsImF1ZCI6Ik15c2VsZiJ9.4Orve0wm3EXkK_q12KFH7EGj5bP4HrsW9UHdf8rJ2lw
+
+###
+POST https://localhost:44384/Operation/Unreturned
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiOTIxODcyZWQtNjgwYi00ZDAzLWJmNjQtYmYyM2ZlNmVhMjRlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTU3MDg5MzEsImlzcyI6Ik15c2VsZiIsImF1ZCI6Ik15c2VsZiJ9.4Orve0wm3EXkK_q12KFH7EGj5bP4HrsW9UHdf8rJ2lw
+
+###
+POST https://localhost:44384/Api/Movie/Return
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiOTIxODcyZWQtNjgwYi00ZDAzLWJmNjQtYmYyM2ZlNmVhMjRlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTU3MDg5MzEsImlzcyI6Ik15c2VsZiIsImF1ZCI6Ik15c2VsZiJ9.4Orve0wm3EXkK_q12KFH7EGj5bP4HrsW9UHdf8rJ2lw
+
+{
+    "MovieId": 7,
+    "Type": "RENT",
+    "UserId": "287bb42a-a1d1-4ddf-a393-8cb5c6c861d7",
+    "Status": "RETURNED"
+}
+
+###
+POST https://localhost:44384/Admin/CreateRole
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiOTIxODcyZWQtNjgwYi00ZDAzLWJmNjQtYmYyM2ZlNmVhMjRlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTU3MDg5MzEsImlzcyI6Ik15c2VsZiIsImF1ZCI6Ik15c2VsZiJ9.4Orve0wm3EXkK_q12KFH7EGj5bP4HrsW9UHdf8rJ2lw
+
+{
+    "Name": "tester2",
+    "Permissions": [
+        "pay",
+        "view",
+        "edit",
+        "create"
+    ]
+}
+
+###
+
+POST https://localhost:44384/Register
+Content-Type: application/json
+
+{
+    "Email": "roles2@admin.com",
+    "Password": "password123",
+    "ConfirmPassword": "password123"
+}
+
+###
+POST https://localhost:44384/Admin/UpdateUserRoles
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiOTIxODcyZWQtNjgwYi00ZDAzLWJmNjQtYmYyM2ZlNmVhMjRlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE2MTU3MDg5MzEsImlzcyI6Ik15c2VsZiIsImF1ZCI6Ik15c2VsZiJ9.4Orve0wm3EXkK_q12KFH7EGj5bP4HrsW9UHdf8rJ2lw
+
+{
+    "UserId": "0bde5787-1930-4054-8185-1ad7dd7bdbf6",
+    "RoleId": "047febd3-e3f9-42d1-9628-aa275eea3d17"
+}
